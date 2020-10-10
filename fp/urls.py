@@ -7,7 +7,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/defender/', include('defender.urls')),  # defender admin
+    # path('admin/defender/', include('defender.urls')),  # defender admin
     path('accounts/', include('accounts.urls')),
     # path('admin/', include(admin.site.urls)),  # normal admin
 

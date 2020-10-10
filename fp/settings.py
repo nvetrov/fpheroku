@@ -172,13 +172,13 @@ AUTHENTICATION_BACKENDS = [
 AUTH_USER_MODEL = 'accounts.CustomUser'
 # TODO НЕ выводит ошибку, если не использовать LDAP.
 #  Security DEFENDER
-DEFENDER_LOCKOUT_TEMPLATE = 'defender_lockout.html'
-# Колчиство попыток авторизации
-DEFENDER_LOGIN_FAILURE_LIMIT = 3
-DEFENDER_COOLOFF_TIME = 200  # . [Default: 300]
-DEFENDER_ACCESS_ATTEMPT_EXPIRATION = 2  # hour  Пепеписывается база через 24.
-# DEFENDER_DISABLE_IP_LOCKOUT = True
-DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
+# DEFENDER_LOCKOUT_TEMPLATE = 'defender_lockout.html'
+# # Колчиство попыток авторизации
+# DEFENDER_LOGIN_FAILURE_LIMIT = 3
+# DEFENDER_COOLOFF_TIME = 200  # . [Default: 300]
+# DEFENDER_ACCESS_ATTEMPT_EXPIRATION = 2  # hour  Пепеписывается база через 24.
+# # DEFENDER_DISABLE_IP_LOCKOUT = True
+# DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 
 LOGGING = {
     'version': 1,
