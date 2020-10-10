@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href={% static 'css/login/style.css' %}>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+{#    <script src="https://kit.fontawesome.com/a81368914c.js"></script>#}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'img/logo/logo.svg' %}">
+    <title>Забытый товар</title>
+</head>
+<body>
+      {% block auth_content %}      {% endblock %}
+<script type="text/javascript" src={% static 'js/login/main.js' %}></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+{# наследуем от базового шаблона#}
+{% extends 'base.html' %}
+{% load static %}
+{#{% load l10n %}#}
+{# ------------------------------------------------Форма поиска------------------------------------------------------ #}
+{#Добавление забытого товара#}
+{% block add_products %}
+    <div class="row">
+        <div class="container">
+            {#            {{ form.non_field.errors }}#}
+            {#            <form action="{% url 'prod_add' %}" method="get" id="post-form">#}
+            <form action="{% url 'prod_add' %}" method="POST" id="ADD-post-form">
+                {% csrf_token %}
+                <label class="control-label">ШТРИХ-КОД </label>
+                <div class="input-group mb-3">
+                    <input type="text" name="bar_code" autofocus="autofocus" placeholder="штрихкод/ЛМ"
+                           class="form-control" id="id_bar_code">
+                    {#                          <div class="input-group-append">#}
+                    {#                          <button class="btn btn-outline-secondary" id="id_get_btn_prod" type="button">Найти</button>#}
+                    {##}
+                    {#                                        </div>#}
+                </div>
+                {#----------------       ЛМ     -------------------------------------------------------------------------- #}
+                <div class="form-group">
+                    <label class="control-label">ЛМ</label>
+                    <input type="text" name="lm_code" id="id_lm_code" class="form-control"
+                           value="{{ product.lm_code }}">
+                </div>
+                {#-----------------   НАИМЕНОВАНИЕ            Е-------------------------------------------------------------#}
+                <div class="form-group">
+                    <label class="control-label">НАИМЕНОВАНИЕ</label>
+                    <input type="text" name="caption" id="id_caption" class="form-control"
+                           value="{{ product.caption }}">
+                </div>
+                {#--------------------- КОЛИЧЕСТВО            -------------------------------------------------------------#}
+                <div class="form-group">
+                    <label class="control-label">КОЛИЧЕСТВО</label>
+                    <input type="text" name="amount_goods" class="form-control"
+                           id="id_amount_goods"
+                           value="{{ product.amount_goods }}">
+                </div>
+                {#---------------------ЗАМЕТКА-------------------------------------------------------------#}
+                <div class="form-group">
+                    <label class="control-label">ЗАМЕТКА</label>
+                    <input type="text" name="note_add" class="form-control"
+                           id="id_note_add"
+                           value="{{ product.note_add }}">
+                </div>
+                {#----------------------------------------------------------------------------------#}
+
+                <div class="form-group" hidden="hidden">
+                    <label class="control-label">Номер магазина </label>
+                    <input type="text" name="shop_num" class="form-control" id="id_shop_num"
+                           value="{{ product.shop_num }}">
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Сохранить</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block javascript %}
+    <script>
+        $(document).ready(function () {
+
+            {#jQuery(document).ready(function(){#}
+            /*
+                On submiting the form, send the POST ajax
+                request to server and after successfull submission
+                display the object.
+
+            $("#ADD-post-form").submit(function (e) {
+                // preventing from page reload and default actions
+                e.preventDefault();
+                // serialize the data for sending the form data.
+                let serializedData = $(this).serialize();
+                // make POST ajax call
+                $.ajax({
+                    type: 'POST',
+                    url: "
+{#            {% url 'prod_add' %}",#}
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 1. clear the form.
+                    $("#ADD-post-form").trigger('reset');
+                    // 2. focus to bar_code input
+                    $("#id_lm_code").focus();
+
+                    // display the newly friend to table.
+                    let instance = JSON.parse(response["instance"]);
+                    let fields = instance[0]["products"];
+
+            {#TODO: Не понятно как сделать так, чтобы сразу в базу данные попадали, а не в таблицу как сейчас#}
+                    $("#myTable tbody").prepend(
+                        `<tr>
+                        <td>${fields["id"]||""}</td>
+                        <td>${fields["bar_code"]||""}</td>
+                        <td>${fields["lm_code"]||""}</td>
+                        <td>${fields["caption"]||""}</td>
+                        <td>${fields["amount_goods"]||""}</td>
+                        <td>${fields["note_add"]||""}</td>
+                        <td>${fields["user"]||""}</td>
+                        <td>${fields["shop_num"]||""}</td>
+                        </tr>`
+                    )
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["response"]["error"]);
+                }
+            })
+        })
+*/
+            /*
+            On focus out on input bar_code,
+            call AJAX get request to check if the bar_code
+            already exists or not.
+            */
+            $("#id_bar_code").change(function (e) {
+                {#if(e.keyCode === 9) {#}
+                e.preventDefault();
+
+                // get the bar_code
+                const bar_code = $(this).val();
+                let readonly = true;
+
+                // GET AJAX request
+                $.ajax({
+                    type: 'GET',
+                    url: "{% url 'search' %}",
+                    data: {"bar_code": bar_code},
+                    success: function (response) {
+                        // Товар найден в БД
+                        if (response["success"]) {
+                            const bar_code = $("#id_bar_code");
+                            const lm_code = $("#id_lm_code");
+                            const caption = $("#id_caption");
+
+                            let instance = response["catalog"];
+
+                            bar_code.val(instance["ean"]);
+                            lm_code.val(instance["lm"]);
+                            caption.val(instance["product_name"]);
+                            {#console.log(instance)#}
+                            {#console.log(instance["ean"])#}
+                            {#console.log(instance["lm"])#}
+                            {#console.log(instance["product_name"])#}
+                            lm_code.attr('readonly', readonly);
+                            caption.attr('readonly', readonly);
+                            caption.focus()
+
+
+                        }
+                    },
+                    // ТОВАР
+                    error: function (response) {
+                        const bar_code = $("#id_bar_code");
+                        alert("Товар не найден");
+                        $("#ADD-post-form").trigger('reset');
+                        {# TODO почему не ставит фокус на ШТРИХ-КОД?#}
+                        bar_code.focus()
+                        console.log(response)
+                    }
+                })
+
+            })
+
+
+        })
+    </script>
+{% endblock javascript %}
+
+
+

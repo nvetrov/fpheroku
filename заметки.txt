@@ -1,0 +1,73 @@
+# Error: That port is already in use.
+# sudo lsof -t -i tcp:8000 | xargs kill -9
+
+
+# пасс EEad1289, 10.80.176.27 сервер, база dataplatform, таблица rms
+
+# django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+# Did you install mysqlclient?
+
+# sudo apt-get install python-dev python3-dev
+# sudo apt-get install libmysqlclient-dev
+# pip install pymysql
+# pip install mysqlclient
+
+
+# ------- SQL ORM -----
+1.
+from django.db import connection
+r = Catalog(ean='000', lm='0', name_product='Тест')
+r.save()
+connection.quries
+2. from  Products.models import Catalog
+c = Catalog.objects.filter(ean='2000118511854').query
+c.values()
+# --------------------
+# отлавливать события
+ q~=2.6  #
+
+#  Чтение настройк из файла в фомате yaml
+https://pypi.org/project/getsecret/
+
+
+select  m.mag_number, m.mag_name, c."GMT"
+from ld_mag as m
+inner join ld_city as c ON c.id = m.mag_city
+where mag_number = 38
+GROUP BY m.mag_number, m.mag_name, c.city_name, c."GMT"
+
+#Компонет для даты
+https://pypi.org/project/django-bootstrap-datepicker-plus/
+
+# Чкаем модуль Auth:
+from ldap3 import Server, Connection, SUBTREE
+
+#  Модель пользователя Django включает в себя следующие поля:
+#
+# username — Никнейм. Обязательное поле. Может содержать до 150 символов, включая  _, @, +, . и -. Именно по этому полю, например, по e-mail в Django работает аутентификация по умолчанию.
+# first_name — Имя. Необязательное поле.
+# last_name — Фамилия. Необязательное поле.
+# e-mail — Электронный адрес. Необязательное поле.
+# password — Пароль. Обязательное поле. В этом поле будет храниться не сам пароль, а его хэш и метаданные. Django не хранит вводимые пользователями пароли в открытом виде.
+# is_staff — Булево поле. Определяет, имеет ли пользователь доступ к админке сайта (/admin).
+# is_active — Определяет, является ли пользователь активным. Например, может ли он залогиниться и проводить какие-то действия на сайте.
+# is_superuser — Определяет, имеет ли пользователь все права, без явного их перечисления.
+# С полным списком полей и их описанием вы можете ознакомиться в документации.
+
+#  python manage.py makemigrations --dry-run --verbosity 3
+
+#1 Ubuntu:ConnectionError at /accounts/login/
+# Error 111 connecting to localhost:6379. Connection refused.
+1. sudo apt-get install redis-server
+2. redis-cli ping   # PONG  --> run
+
+"/usr/bin/psql" --command " "\\copy public.item_master (item, item_parent, short_desc) TO '/home/sa/PycharmProjects/fp/data/fp_public_item_master.csv' DELIMITER ',' CSV QUOTE '\"' ESCAPE '''';""
+
+
+manage.py migrate <модель> <номер миграции>
+# Просто удалите файл данной миграции если она еще не применена. Исправьте и выполните makemigrations еще раз.
+# По manage.py show migrations можно глянуть примененные и непримененные миграции.
+# Указав номер, можно откатиться на предыдущую миграцию
+# manage.py migrate <модель> <номер миграции>
+
+python manage.py runserver:10.81.174.175:8080

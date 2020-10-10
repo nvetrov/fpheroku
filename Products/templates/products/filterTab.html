@@ -1,0 +1,13 @@
+{# наследуем от базового шаблона#}
+{% extends 'base.html' %}
+
+{# Фильтр НАЙДЕН или ВЫДАН.  ПО умолчанию  Найден отображается#}
+{% block fiter_tabl %}
+    {% include 'include_template/inc_fiter_tabl.html' %}
+{% endblock %}
+
+{#Таблица ЗАБЫТОГО ТОВАРА#}
+{% block content %}
+    {% include 'include_template/inc_table_view.html' %}
+{% endblock %}
+

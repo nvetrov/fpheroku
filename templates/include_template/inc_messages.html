@@ -1,0 +1,28 @@
+{# templatetags#}
+{#{% load get_last_product %}#}
+
+{% if messages %}
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            {% for message in messages %}
+                {% if message.message == 'error' %}
+                    <div class="alert alert-danger" role="alert">
+                        <p>{{ message }}</p>
+                        <p>{{ message.label_tag }}</p>
+                        {#                        <p>{{ message.errors }}</p>#}
+                    </div>
+                {% else %}
+                    <div class="alert alert-{{ message.tags }}" role="alert">
+
+                        {% for item in products %}
+                            {% if forloop.last %}
+                                <a href="{{ item.get_absolute_url }}"> {{ message }}  </a>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

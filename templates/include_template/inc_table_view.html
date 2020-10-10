@@ -1,0 +1,84 @@
+{#Поиск по id чрезе Jquery#}
+<div class = "container .col-6 .col-md-4">
+<label for="tableSearch"></label>
+<input class="form-control" id="tableSearch" type="text" autofocus placeholder="Поиск">
+</div>
+<br>
+{#TODO Сделать погинацию#}
+<table class="table table-hover table-sm ">
+    <thead>
+    <tr>
+        <th scope="col" class="bg-info">НОМЕР ЗАЯВКИ</th>
+        <th scope="col" class="bg-info">ШТРИХКОД</th>
+        <th scope="col" class="bg-info">ЛМ</th>
+        <th scope="col" class="bg-info">НАИМЕНОВАНИЕ</th>
+        <th scope="col" class="bg-info">КОЛ-ВО</th>
+        <th scope="col" class="bg-info">НАЙДЕН</th>
+        <th scope="col" class="bg-info">ЗАМЕТКА</th>
+        <th scope="col" class="bg-info">ВЫДАН</th>
+        <th scope="col" class="bg-info">КЕМ</th>
+        <th scope="col" class="bg-info">№</th>
+    </tr>
+    </thead>
+
+    {% for item in products %}
+        <tbody id="myTable">
+        <tr>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark"> {{ item.id }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.bar_code }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.lm_code }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.caption }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.amount_goods }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark"> {{ item.create_at|date:"d.m.Y" }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.note_add|default_if_none:""|linebreaksbr  }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.update_at|default_if_none:"Не выдан"|date:"d.m.Y" }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.user|default_if_none:"None" }}</a></td>
+            <td><a href="{{ item.get_absolute_url }}" class="text-dark">{{ item.shop_num|default_if_none:"" }}</a></td>
+        </tr>
+    {% empty %} {# нет данных #}
+        <div class="table-danger ">Забытых товаров нет</div>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+{##}
+{#</div>#}
+
+
+{#<div class="container">#}
+{#  <input class="form-control mb-4" id="tableSearch" type="text"#}
+{#    placeholder="Type something to search list items">#}
+{##}
+{#  <table class="table table-bordered table-striped">#}
+{#    <thead>#}
+{#      <tr>#}
+{#        <th>Firstname</th>#}
+{#        <th>Lastname</th>#}
+{#        <th>Email</th>#}
+{#      </tr>#}
+{#    </thead>#}
+{#    <tbody id="myTable">#}
+{#      <tr>#}
+{#        <td>John</td>#}
+{#        <td>Doe</td>#}
+{#        <td>john@example.com</td>#}
+{#      </tr>#}
+{#      <tr>#}
+{#        <td>Mary</td>#}
+{#        <td>Moe</td>#}
+{#        <td>mary@mail.com</td>#}
+{#      </tr>#}
+{#      <tr>#}
+{#        <td>July</td>#}
+{#        <td>Dooley</td>#}
+{#        <td>july@greatstuff.com</td>#}
+{#      </tr>#}
+{#      <tr>#}
+{#        <td>Anja</td>#}
+{#        <td>Ravendale</td>#}
+{#        <td>a_r@test.com</td>#}
+{#      </tr>#}
+{#    </tbody>#}
+{#  </table>#}
+{#</div>#}

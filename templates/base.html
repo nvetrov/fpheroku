@@ -1,0 +1,55 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- static CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo/logo.svg' %}">
+    <title>Забытый товар</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+ {% comment %}  элемент navbar  {% endcomment %}
+{% block nav %}
+    {% include 'include_template/navbar.html' %}
+{% endblock %}
+
+
+
+{% comment %} ФОРМА: "Добавить товар" и показать сообщение SUCCSESS or ERROR {% endcomment %}
+{% include 'include_template/inc_messages.html' %}
+  {% block add_products %}
+{% endblock %}
+
+{# Фильтр#}
+<div class="col-md-2">
+    {% block fiter_tabl %}  {% endblock %}
+
+</div>
+{#Таблица#}
+{% block content %} {% endblock %}
+
+{# Форма таблицы #}
+{% block view_products %} {% endblock %}
+{% block searchform %}  {% endblock %}
+
+
+
+<!-- jQuery first, -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+{% block javascript %} {% endblock %}
+
+<script src="{% static 'js/products/products.js' %}"></script>
+</body>
+</html>

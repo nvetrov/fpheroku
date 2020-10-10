@@ -1,0 +1,55 @@
+{% extends "registration/auth_base.html" %}
+{% load static %}
+{% block  auth_content %}
+
+    <img class="wave" src={% static 'img/login/wave.png' %} alt="pic">
+<div class="container">
+    <div class="img">
+{#        <img src={% static 'img/login/bg.svg' %}>#}
+        <img src={% static 'img/login/undraw_notes1_cf55.svg' %}>
+    </div>
+    <div class="login-content" id="form-template">
+        <form method="post" action="{% url 'login' %}" >
+            {% csrf_token %}
+            {{ form.non_field.errors }}
+{#            <img src={% static 'img/login/avatar.svg' %}>#}
+            <img src={% static 'img/logo/logo.svg' %}>
+            <h2 class="title">Электронный журнал забытых вещей</h2>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <h5>ЛДАП</h5>
+                     {% comment %}
+                                            <input type="text" class="input" id="id_username">
+                                          <div class="input">
+                                             {{ form.username }}
+                    {% endcomment %}
+                    <input class="input" type="text"  name="username" autofocus="" autocapitalize="none"
+                           autocomplete="off" maxlength="150" required="" id="id_username">
+                    {#</div>#}
+                </div>
+            </div>
+
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <h5>ПАРОЛЬ</h5>
+                      {% comment %} {#                    <input type="password" class="input" id="id_password">#}  {% endcomment %}
+                    <input class="input" type="password" name="password" autofocus="" autocapitalize="none"
+                           autocomplete="off" maxlength="150" required="" id="id_password">
+                     {% comment %}                        {{ form.password }}#}  {% endcomment %}
+                </div>
+            </div>
+            <a href="https://intraru.leroymerlin.ru/pages/passwordchangenew.aspx"> забыл пароль?</a>
+            <input type="submit" class="btn" value="ВХОД">
+{#            <input type="hidden" name="next" value="{{ next }}">#}
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
