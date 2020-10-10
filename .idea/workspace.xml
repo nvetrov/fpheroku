@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d452af4-6e18-49f0-ae36-8eb10edc0427" name="Default Changelist" comment="add data.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -589,14 +588,7 @@
       <workItem from="1602351271218" duration="1401000" />
       <workItem from="1602357670483" duration="5764000" />
       <workItem from="1602363449164" duration="87000" />
-      <workItem from="1602363541509" duration="6971000" />
-    </task>
-    <task id="LOCAL-00107" summary="Ajax">
-      <created>1601039676958</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1601039676958</updated>
+      <workItem from="1602363541509" duration="7619000" />
     </task>
     <task id="LOCAL-00108" summary="migrate db">
       <created>1601041680502</created>
@@ -934,7 +926,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602369976858</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="add data.xml">
+      <created>1602370523175</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1602370523175</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
