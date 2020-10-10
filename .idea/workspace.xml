@@ -14,6 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d452af4-6e18-49f0-ae36-8eb10edc0427" name="Default Changelist" comment="add data.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +76,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/venv/lib/python3.8/site-packages/django/contrib/auth/__init__.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/views/generic/list.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/http/response.py&#10;/home/sa/PycharmProjects/fp/.getsecret.yaml&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/session_security/templates/session_security/all.html&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/contrib/auth/views.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/defender/signals.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/contrib/auth/backends.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/views/generic/base.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/utils/autoreload.py&#10;true&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django_python3_ldap/auth.py&#10;/home/sa/PycharmProjects/fp/Products/migrations/0006_auto_20200912_1454.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/forms/models.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/shortcuts.py&#10;/home/sa/PycharmProjects/fp/venv/lib/python3.8/site-packages/django/contrib/auth/base_user.py" />
@@ -588,7 +591,7 @@
       <workItem from="1602351271218" duration="1401000" />
       <workItem from="1602357670483" duration="5764000" />
       <workItem from="1602363449164" duration="87000" />
-      <workItem from="1602363541509" duration="7619000" />
+      <workItem from="1602363541509" duration="9005000" />
     </task>
     <task id="LOCAL-00108" summary="migrate db">
       <created>1601041680502</created>
