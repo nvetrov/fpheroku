@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+
 
 # Application definition
 
@@ -211,4 +211,5 @@ LOGGING = {
 }
 
 # Activate Django-Heroku.
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
+TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
