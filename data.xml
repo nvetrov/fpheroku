@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="auth.permission" pk="1">
+    <field name="name" type="CharField">Can add log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">add_logentry</field>
+  </object>
+  <object model="auth.permission" pk="2">
+    <field name="name" type="CharField">Can change log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">change_logentry</field>
+  </object>
+  <object model="auth.permission" pk="3">
+    <field name="name" type="CharField">Can delete log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">delete_logentry</field>
+  </object>
+  <object model="auth.permission" pk="4">
+    <field name="name" type="CharField">Can view log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">view_logentry</field>
+  </object>
+  <object model="auth.permission" pk="5">
+    <field name="name" type="CharField">Can add permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">add_permission</field>
+  </object>
+  <object model="auth.permission" pk="6">
+    <field name="name" type="CharField">Can change permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">change_permission</field>
+  </object>
+  <object model="auth.permission" pk="7">
+    <field name="name" type="CharField">Can delete permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">delete_permission</field>
+  </object>
+  <object model="auth.permission" pk="8">
+    <field name="name" type="CharField">Can view permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">view_permission</field>
+  </object>
+  <object model="auth.permission" pk="9">
+    <field name="name" type="CharField">Can add group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">add_group</field>
+  </object>
+  <object model="auth.permission" pk="10">
+    <field name="name" type="CharField">Can change group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">change_group</field>
+  </object>
+  <object model="auth.permission" pk="11">
+    <field name="name" type="CharField">Can delete group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">delete_group</field>
+  </object>
+  <object model="auth.permission" pk="12">
+    <field name="name" type="CharField">Can view group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">view_group</field>
+  </object>
+  <object model="auth.permission" pk="13">
+    <field name="name" type="CharField">Can add content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">add_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="14">
+    <field name="name" type="CharField">Can change content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">change_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="15">
+    <field name="name" type="CharField">Can delete content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">delete_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="16">
+    <field name="name" type="CharField">Can view content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">view_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="17">
+    <field name="name" type="CharField">Can add session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">add_session</field>
+  </object>
+  <object model="auth.permission" pk="18">
+    <field name="name" type="CharField">Can change session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">change_session</field>
+  </object>
+  <object model="auth.permission" pk="19">
+    <field name="name" type="CharField">Can delete session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">delete_session</field>
+  </object>
+  <object model="auth.permission" pk="20">
+    <field name="name" type="CharField">Can view session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">view_session</field>
+  </object>
+  <object model="auth.permission" pk="21">
+    <field name="name" type="CharField">Can add custom user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">add_customuser</field>
+  </object>
+  <object model="auth.permission" pk="22">
+    <field name="name" type="CharField">Can change custom user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">change_customuser</field>
+  </object>
+  <object model="auth.permission" pk="23">
+    <field name="name" type="CharField">Can delete custom user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">delete_customuser</field>
+  </object>
+  <object model="auth.permission" pk="24">
+    <field name="name" type="CharField">Can view custom user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">view_customuser</field>
+  </object>
+  <object model="auth.permission" pk="25">
+    <field name="name" type="CharField">Can add Товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">add_catalog</field>
+  </object>
+  <object model="auth.permission" pk="26">
+    <field name="name" type="CharField">Can change Товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">change_catalog</field>
+  </object>
+  <object model="auth.permission" pk="27">
+    <field name="name" type="CharField">Can delete Товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">delete_catalog</field>
+  </object>
+  <object model="auth.permission" pk="28">
+    <field name="name" type="CharField">Can view Товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">view_catalog</field>
+  </object>
+  <object model="auth.permission" pk="29">
+    <field name="name" type="CharField">Can add Забытый товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">add_foundgoods</field>
+  </object>
+  <object model="auth.permission" pk="30">
+    <field name="name" type="CharField">Can change Забытый товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">change_foundgoods</field>
+  </object>
+  <object model="auth.permission" pk="31">
+    <field name="name" type="CharField">Can delete Забытый товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">delete_foundgoods</field>
+  </object>
+  <object model="auth.permission" pk="32">
+    <field name="name" type="CharField">Can view Забытый товар</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">view_foundgoods</field>
+  </object>
+  <object model="auth.permission" pk="33">
+    <field name="name" type="CharField">Can add access attempt</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">add_accessattempt</field>
+  </object>
+  <object model="auth.permission" pk="34">
+    <field name="name" type="CharField">Can change access attempt</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">change_accessattempt</field>
+  </object>
+  <object model="auth.permission" pk="35">
+    <field name="name" type="CharField">Can delete access attempt</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">delete_accessattempt</field>
+  </object>
+  <object model="auth.permission" pk="36">
+    <field name="name" type="CharField">Can view access attempt</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">view_accessattempt</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="1">
+    <field name="app_label" type="CharField">admin</field>
+    <field name="model" type="CharField">logentry</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="2">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">permission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="3">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">group</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="4">
+    <field name="app_label" type="CharField">contenttypes</field>
+    <field name="model" type="CharField">contenttype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="5">
+    <field name="app_label" type="CharField">sessions</field>
+    <field name="model" type="CharField">session</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="6">
+    <field name="app_label" type="CharField">accounts</field>
+    <field name="model" type="CharField">customuser</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="7">
+    <field name="app_label" type="CharField">Products</field>
+    <field name="model" type="CharField">catalog</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="8">
+    <field name="app_label" type="CharField">Products</field>
+    <field name="model" type="CharField">foundgoods</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="9">
+    <field name="app_label" type="CharField">defender</field>
+    <field name="model" type="CharField">accessattempt</field>
+  </object>
+  <object model="sessions.session" pk="4ugd2k6h0pxb8wcmskg15m9hfw9zcvs5">
+    <field name="session_data" type="TextField">.eJxVjEEOwiAQRe_C2hAoUxCX7nsGwsCMVA0kpV0Z765NutDtf-_9lwhxW0vYOi1hzuIitDj9bhjTg-oO8j3WW5Op1XWZUe6KPGiXU8v0vB7u30GJvXzrUftRk9HKoVdJg2dMOCgFjsEwAHEiN2S27uwsoSbmCGCRvFExQRbvD9STODI:1kRHDp:nbbWOv9X0Na9E7WYqxVGYdw736yPCIkW8YkVUSbwJeg</field>
+    <field name="expire_date" type="DateTimeField">2020-10-24T15:55:49.299679+00:00</field>
+  </object>
+  <object model="sessions.session" pk="6cdt24vtms4dy6rwv5aux3222kmbidpg">
+    <field name="session_data" type="TextField">.eJxVjEEOwiAQRe_C2hAoUxCX7nsGwsCMVA0kpV0Z765NutDtf-_9lwhxW0vYOi1hzuIitDj9bhjTg-oO8j3WW5Op1XWZUe6KPGiXU8v0vB7u30GJvXzrUftRk9HKoVdJg2dMOCgFjsEwAHEiN2S27uwsoSbmCGCRvFExQRbvD9STODI:1kQnj1:ow6TkKkOdJgP46kZJAfbbT9tGvu8ge32NO5r-ugXSN8</field>
+    <field name="expire_date" type="DateTimeField">2020-10-23T08:26:03.345560+00:00</field>
+  </object>
+  <object model="sessions.session" pk="9kjpy4y98zaownelmxeibk0kpsnao0s5">
+    <field name="session_data" type="TextField">.eJxVi0sKAyEQBe_iOgyjtr_skotI23ZQAg5EXQ25e2Ygi2T5XlXtIuIcJc7Or1izuAolLr9fQnpyOwESbbONvpyQ26iEo25tuR3z_rX-0oK9HF0ITE5zsA6ShJS0DEoHTeYhXZYZrFEOsperMwgAZIxZPXpFFgJn1OL9AXmRNPc:1kLtkH:U_fl6ve0oTdw4YhsDUjCl19ZWOIPp0-YoleyBI1s3sk</field>
+    <field name="expire_date" type="DateTimeField">2020-10-09T19:51:05.068508+00:00</field>
+  </object>
+  <object model="sessions.session" pk="al3stfdpuhr6nuy23pdw50bbuutct65s">
+    <field name="session_data" type="TextField">.eJxVjEEOwiAQRe_C2hAoUxCX7nsGwsCMVA0kpV0Z765NutDtf-_9lwhxW0vYOi1hzuIitDj9bhjTg-oO8j3WW5Op1XWZUe6KPGiXU8v0vB7u30GJvXzrUftRk9HKoVdJg2dMOCgFjsEwAHEiN2S27uwsoSbmCGCRvFExQRbvD9STODI:1kMVXI:_suqDqYE3zOrZRvaassvc6GstF5YunChHFsBCew1z_c</field>
+    <field name="expire_date" type="DateTimeField">2020-10-11T12:12:12.013376+00:00</field>
+  </object>
+  <object model="sessions.session" pk="l7kh4y8dq0ylw354m507ae82shrt0ysq">
+    <field name="session_data" type="TextField">.eJxVjEEOwiAQRe_C2hAoUxCX7nsGwsCMVA0kpV0Z765NutDtf-_9lwhxW0vYOi1hzuIitDj9bhjTg-oO8j3WW5Op1XWZUe6KPGiXU8v0vB7u30GJvXzrUftRk9HKoVdJg2dMOCgFjsEwAHEiN2S27uwsoSbmCGCRvFExQRbvD9STODI:1kQoj8:biYAxL0hmfX0UtXb_b6xe-YNIJEi7QEMqLmdt3yMU5o</field>
+    <field name="expire_date" type="DateTimeField">2020-10-23T09:30:14.316254+00:00</field>
+  </object>
+  <object model="accounts.customuser" pk="1">
+    <field name="password" type="CharField">pbkdf2_sha256$216000$9TPN9gPAbPMG$YYldz8EzpnGkc+3xe21q+mExQ/10e5S/DGRiSuDdBMM=</field>
+    <field name="last_login" type="DateTimeField">2020-10-10T19:13:27.980881+00:00</field>
+    <field name="is_superuser" type="BooleanField">True</field>
+    <field name="email" type="CharField">admin@admin.ru</field>
+    <field name="is_staff" type="BooleanField">True</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-09-25T13:29:27.725883+00:00</field>
+    <field name="shop_num" type="SmallIntegerField">43</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="accounts.customuser" pk="2">
+    <field name="password" type="CharField"></field>
+    <field name="last_login" type="DateTimeField">2020-09-25T22:13:44.367700+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="email" type="CharField">Nikolai.Vetrov@leroymerlin.ru</field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-09-25T19:51:04.901918+00:00</field>
+    <field name="shop_num" type="SmallIntegerField">43</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="accounts.customuser" pk="3">
+    <field name="password" type="CharField"></field>
+    <field name="last_login" type="DateTimeField">2020-09-27T11:03:57.937436+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="email" type="CharField">[]</field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2020-09-27T11:03:57.862362+00:00</field>
+    <field name="shop_num" type="SmallIntegerField">43</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+  <object model="Products.foundgoods" pk="1">
+    <field name="bar_code" type="CharField">123456789012</field>
+    <field name="lm_code" type="CharField">123</field>
+    <field name="caption" type="CharField">КОННЕКТОР PREMIUM 13ММ (1/2")</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">Принеёс кто-то</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-09-25</field>
+    <field name="update_at" type="DateField">2020-09-28</field>
+  </object>
+  <object model="Products.foundgoods" pk="2">
+    <field name="bar_code" type="CharField">123456789012</field>
+    <field name="lm_code" type="CharField">123</field>
+    <field name="caption" type="CharField">КОННЕКТОР PREMIUM 13ММ (1/2")</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">В запас</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-09-25</field>
+    <field name="update_at" type="DateField">2020-10-10</field>
+  </object>
+  <object model="Products.foundgoods" pk="3">
+    <field name="bar_code" type="CharField">123456789012</field>
+    <field name="lm_code" type="CharField">23123123</field>
+    <field name="caption" type="CharField">Товар Б</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">Принёс кто-то</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-09-25</field>
+    <field name="update_at" type="DateField">2020-10-09</field>
+  </object>
+  <object model="Products.foundgoods" pk="4">
+    <field name="bar_code" type="CharField">2400000538233</field>
+    <field name="lm_code" type="CharField">82257709</field>
+    <field name="caption" type="CharField">Костюм Вулкан(молескин)112-116/170-176</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">2</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="5">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">11111</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="6">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">3.0</field>
+    <field name="note_add" type="CharField">Нашли</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="7">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">1.0</field>
+    <field name="note_add" type="CharField">Принеёс кто-то</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="8">
+    <field name="bar_code" type="CharField">3150262937860</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">3.0</field>
+    <field name="note_add" type="CharField"><None></None></field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="9">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">2.0</field>
+    <field name="note_add" type="CharField">3</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="10">
+    <field name="bar_code" type="CharField">2400000538233</field>
+    <field name="lm_code" type="CharField">82257709</field>
+    <field name="caption" type="CharField">Костюм Вулкан(молескин)112-116/170-176</field>
+    <field name="amount_goods" type="FloatField">4.0</field>
+    <field name="note_add" type="CharField">Принёс</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="11">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">2.0</field>
+    <field name="note_add" type="CharField">2</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="12">
+    <field name="bar_code" type="CharField">2000150655363</field>
+    <field name="lm_code" type="CharField">15065536</field>
+    <field name="caption" type="CharField">Цилиндр 35X45KNOB TRANSIT 6P никель  4кл</field>
+    <field name="amount_goods" type="FloatField">4.0</field>
+    <field name="note_add" type="CharField">1</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-09</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="13">
+    <field name="bar_code" type="CharField">4680046870810</field>
+    <field name="lm_code" type="CharField">82249304</field>
+    <field name="caption" type="CharField">Угол внутр. вертикальный 90гр. 100x400</field>
+    <field name="amount_goods" type="FloatField">2.0</field>
+    <field name="note_add" type="CharField">Нашли на парковке</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-10</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="14">
+    <field name="bar_code" type="CharField">2000141755652</field>
+    <field name="lm_code" type="CharField">14175565</field>
+    <field name="caption" type="CharField">Холст 40х40см Слоны</field>
+    <field name="amount_goods" type="FloatField">2.0</field>
+    <field name="note_add" type="CharField">4</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-10</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="15">
+    <field name="bar_code" type="CharField">4627080571839</field>
+    <field name="lm_code" type="CharField">82256992</field>
+    <field name="caption" type="CharField">Угл соед_ль крест-й лотку 200х50</field>
+    <field name="amount_goods" type="FloatField">2.0</field>
+    <field name="note_add" type="CharField">2</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-10</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.foundgoods" pk="16">
+    <field name="bar_code" type="CharField">2000126515561</field>
+    <field name="lm_code" type="CharField">12651556</field>
+    <field name="caption" type="CharField">Н/лампа ОФИС 1хЕ27х20W (эн-сбер) черн</field>
+    <field name="amount_goods" type="FloatField">3.0</field>
+    <field name="note_add" type="CharField">New</field>
+    <field name="user" rel="ManyToOneRel" to="accounts.customuser">1</field>
+    <field name="shop_num" type="PositiveSmallIntegerField">43</field>
+    <field name="create_at" type="DateField">2020-10-10</field>
+    <field name="update_at" type="DateField"><None></None></field>
+  </object>
+  <object model="Products.catalog" pk="100">
+    <field name="ean" type="CharField">5702328754003</field>
+    <field name="lm" type="CharField">82246136</field>
+    <field name="product_name" type="CharField">Окно Станд. ВЕЛЮКС 2к. ручка св. 114x140</field>
+  </object>
+  <object model="Products.catalog" pk="101">
+    <field name="ean" type="CharField">4393720431619</field>
+    <field name="lm" type="CharField">82283095</field>
+    <field name="product_name" type="CharField">диск отрезной 150X1,6X22,23 (25)</field>
+  </object>
+  <object model="Products.catalog" pk="102">
+    <field name="ean" type="CharField">4660054830655</field>
+    <field name="lm" type="CharField">82222129</field>
+    <field name="product_name" type="CharField">КРАН ШАРОВОЙ КШ.Ц.М.040.040.Н/П.02</field>
+  </object>
+  <object model="Products.catalog" pk="103">
+    <field name="ean" type="CharField">2000140008889</field>
+    <field name="lm" type="CharField">14000888</field>
+    <field name="product_name" type="CharField">Дверь мет. ISOTERMA bronza (950L)</field>
+  </object>
+  <object model="Products.catalog" pk="104">
+    <field name="ean" type="CharField">2000128061080</field>
+    <field name="lm" type="CharField">12806108</field>
+    <field name="product_name" type="CharField">Н/лампа на прищепке LED12Х1W сер</field>
+  </object>
+  <object model="Products.catalog" pk="105">
+    <field name="ean" type="CharField">2000126515561</field>
+    <field name="lm" type="CharField">12651556</field>
+    <field name="product_name" type="CharField">Н/лампа ОФИС 1хЕ27х20W (эн-сбер) черн</field>
+  </object>
+  <object model="Products.catalog" pk="106">
+    <field name="ean" type="CharField">2000138639644</field>
+    <field name="lm" type="CharField">13863964</field>
+    <field name="product_name" type="CharField">Cвет-к СВЕЧА LCG в ассортименте</field>
+  </object>
+  <object model="Products.catalog" pk="107">
+    <field name="ean" type="CharField">4680001172089</field>
+    <field name="lm" type="CharField">14377028</field>
+    <field name="product_name" type="CharField">Ткань п/м вьюн жаккард зелен 150см_</field>
+  </object>
+  <object model="Products.catalog" pk="108">
+    <field name="ean" type="CharField">2000142515804</field>
+    <field name="lm" type="CharField">14251580</field>
+    <field name="product_name" type="CharField">Подушка микрофибра VENZEL 40х40 серый</field>
+  </object>
+  <object model="Products.catalog" pk="109">
+    <field name="ean" type="CharField">4607158148569</field>
+    <field name="lm" type="CharField">13458643</field>
+    <field name="product_name" type="CharField">Постер в раме 40х50 Сицилийский берег</field>
+  </object>
+  <object model="Products.catalog" pk="110">
+    <field name="ean" type="CharField">2000141902988</field>
+    <field name="lm" type="CharField">14190298</field>
+    <field name="product_name" type="CharField">Штора с цифр.печатью город 150х270 лента</field>
+  </object>
+  <object model="Products.catalog" pk="111">
+    <field name="ean" type="CharField">8695312504487</field>
+    <field name="lm" type="CharField">14190968</field>
+    <field name="product_name" type="CharField">Штора 1шт роза софт лента200х260</field>
+  </object>
+  <object model="Products.catalog" pk="112">
+    <field name="ean" type="CharField">2000130699981</field>
+    <field name="lm" type="CharField">13069998</field>
+    <field name="product_name" type="CharField">Тюль1шт кух органз фиол круг лент145х180</field>
+  </object>
+  <object model="Products.catalog" pk="113">
+    <field name="ean" type="CharField">4607158140525</field>
+    <field name="lm" type="CharField">13458600</field>
+    <field name="product_name" type="CharField">Постер в раме 30х30 Пятнистый кот</field>
+  </object>
+  <object model="Products.catalog" pk="114">
+    <field name="ean" type="CharField">4607074260673</field>
+    <field name="lm" type="CharField">18749984</field>
+    <field name="product_name" type="CharField">Торф низк. степени разлож. pH2,5-3,5 70л</field>
+  </object>
+  <object model="Products.catalog" pk="115">
+    <field name="ean" type="CharField">2000178276618</field>
+    <field name="lm" type="CharField">17827661</field>
+    <field name="product_name" type="CharField">Тюль лен цветок 300 260 на шт ленте</field>
+  </object>
+  <object model="Products.catalog" pk="116">
+    <field name="ean" type="CharField">2000124159408</field>
+    <field name="lm" type="CharField">12415940</field>
+    <field name="product_name" type="CharField">Ткань п/м беж дет жакк Графити 150</field>
+  </object>
+  <object model="Products.catalog" pk="117">
+    <field name="ean" type="CharField">2000170855736</field>
+    <field name="lm" type="CharField">17085573</field>
+    <field name="product_name" type="CharField">Штора Ромб серебро 200X270 лента</field>
+  </object>
+  <object model="Products.catalog" pk="118">
+    <field name="ean" type="CharField">4670016060303</field>
+    <field name="lm" type="CharField">16269442</field>
+    <field name="product_name" type="CharField">Синтепон п/м МC-100 150см</field>
+  </object>
+  <object model="Products.catalog" pk="119">
+    <field name="ean" type="CharField">2000151139305</field>
+    <field name="lm" type="CharField">15113930</field>
+    <field name="product_name" type="CharField">Тюль Иллюзия сирень 300 260 лента</field>
+  </object>
+  <object model="Products.catalog" pk="120">
+    <field name="ean" type="CharField">2000138933704</field>
+    <field name="lm" type="CharField">13893370</field>
+    <field name="product_name" type="CharField">ЛЦ ГСП ТИП А 2500X1200X12,5 ММ</field>
+  </object>
+  <object model="Products.catalog" pk="121">
+    <field name="ean" type="CharField">4690653035328</field>
+    <field name="lm" type="CharField">82576375</field>
+    <field name="product_name" type="CharField">Торцевые (пара) 45мм 254 ЯСН СВТ</field>
+  </object>
+  <object model="Products.catalog" pk="122">
+    <field name="ean" type="CharField">4690653172818</field>
+    <field name="lm" type="CharField">82581907</field>
+    <field name="product_name" type="CharField">Обвод для труб 1/2 (2шт) 276 СОС БЛН</field>
+  </object>
+  <object model="Products.catalog" pk="123">
+    <field name="ean" type="CharField">4680006919535</field>
+    <field name="lm" type="CharField">82576606</field>
+    <field name="product_name" type="CharField">Соединитель (2шт) 55мм 253 ЯСН СЕР</field>
+  </object>
+  <object model="Products.catalog" pk="124">
+    <field name="ean" type="CharField">4690653172726</field>
+    <field name="lm" type="CharField">82581903</field>
+    <field name="product_name" type="CharField">Обвод для труб 1/2 (2шт) 253 ЯСН СЕР</field>
+  </object>
+  <object model="Products.catalog" pk="125">
+    <field name="ean" type="CharField">4650000350511</field>
+    <field name="lm" type="CharField">82576332</field>
+    <field name="product_name" type="CharField">Плинтус 55мм 2,5м 331 КМП</field>
+  </object>
+  <object model="Products.catalog" pk="126">
+    <field name="ean" type="CharField">4660014101443</field>
+    <field name="lm" type="CharField">82538964</field>
+    <field name="product_name" type="CharField">Вставка S-25 3м шампань бьянко</field>
+  </object>
+  <object model="Products.catalog" pk="127">
+    <field name="ean" type="CharField">4610032950042</field>
+    <field name="lm" type="CharField">82197714</field>
+    <field name="product_name" type="CharField">Муфта для дренажной трубы d110</field>
+  </object>
+  <object model="Products.catalog" pk="128">
+    <field name="ean" type="CharField">2000156548164</field>
+    <field name="lm" type="CharField">15654816</field>
+    <field name="product_name" type="CharField">Панно Фиори Ромашка  40х75</field>
+  </object>
+  <object model="Products.catalog" pk="129">
+    <field name="ean" type="CharField">2000142279003</field>
+    <field name="lm" type="CharField">14227900</field>
+    <field name="product_name" type="CharField">Зат. См. LITOCHROM STARLIKE C.480 2,5кг</field>
+  </object>
+  <object model="Products.catalog" pk="130">
+    <field name="ean" type="CharField">4620017602309</field>
+    <field name="lm" type="CharField">82460982</field>
+    <field name="product_name" type="CharField">Genesis 35 см пенал</field>
+  </object>
+  <object model="Products.catalog" pk="131">
+    <field name="ean" type="CharField">4620009053744</field>
+    <field name="lm" type="CharField">82406002</field>
+    <field name="product_name" type="CharField">Шкаф-зеркало ЛИГА 60.01 Пр.</field>
+  </object>
+  <object model="Products.catalog" pk="132">
+    <field name="ean" type="CharField">4052836230300</field>
+    <field name="lm" type="CharField">82313960</field>
+    <field name="product_name" type="CharField">Труба ПВХ наруж.кан. KGEM 200x3000мм</field>
+  </object>
+  <object model="Products.catalog" pk="133">
+    <field name="ean" type="CharField">4603000096927</field>
+    <field name="lm" type="CharField">82164087</field>
+    <field name="product_name" type="CharField">Заглушка правая (красное дерево)25шт</field>
+  </object>
+  <object model="Products.catalog" pk="134">
+    <field name="ean" type="CharField">4630046118870</field>
+    <field name="lm" type="CharField">82139845</field>
+    <field name="product_name" type="CharField">Снегозадерж. Ус.0,45 Drap-f RAL7024-2,0м</field>
+  </object>
+  <object model="Products.catalog" pk="135">
+    <field name="ean" type="CharField">4606056181647</field>
+    <field name="lm" type="CharField">82313815</field>
+    <field name="product_name" type="CharField">Струбцина М8</field>
+  </object>
+  <object model="Products.catalog" pk="136">
+    <field name="ean" type="CharField">4603000090260</field>
+    <field name="lm" type="CharField">82164341</field>
+    <field name="product_name" type="CharField">Заглушка левая и правая 68мм Венге 2шт</field>
+  </object>
+  <object model="Products.catalog" pk="137">
+    <field name="ean" type="CharField">4620013426954</field>
+    <field name="lm" type="CharField">82150055</field>
+    <field name="product_name" type="CharField">Датчик осадков TSP02-3,0</field>
+  </object>
+  <object model="Products.catalog" pk="138">
+    <field name="ean" type="CharField">8404880367734</field>
+    <field name="lm" type="CharField">82262449</field>
+    <field name="product_name" type="CharField">Пила круговая  25мм FIT36773</field>
+  </object>
+  <object model="Products.catalog" pk="139">
+    <field name="ean" type="CharField">2000124844526</field>
+    <field name="lm" type="CharField">12484452</field>
+    <field name="product_name" type="CharField">Спот NERO 1xGU10x50W бел</field>
+  </object>
+  <object model="Products.catalog" pk="140">
+    <field name="ean" type="CharField">4690521010426</field>
+    <field name="lm" type="CharField">82211925</field>
+    <field name="product_name" type="CharField">ЛЕСТНИЦА НОВАЯ ВЫСОТА NV 300, 4/5</field>
+  </object>
+  <object model="Products.catalog" pk="141">
+    <field name="ean" type="CharField">4680046872074</field>
+    <field name="lm" type="CharField">82249430</field>
+    <field name="product_name" type="CharField">Переходник центральный 50x50-400</field>
+  </object>
+  <object model="Products.catalog" pk="142">
+    <field name="ean" type="CharField">4630046119259</field>
+    <field name="lm" type="CharField">82139883</field>
+    <field name="product_name" type="CharField">Снегозадерж. Ус.0,5 Velur-f RAL6005-2,0м</field>
+  </object>
+  <object model="Products.catalog" pk="143">
+    <field name="ean" type="CharField">4620771316832</field>
+    <field name="lm" type="CharField">82558381</field>
+    <field name="product_name" type="CharField">Тройник Круг. ф250xф250xф250</field>
+  </object>
+  <object model="Products.catalog" pk="144">
+    <field name="ean" type="CharField">4690250051127</field>
+    <field name="lm" type="CharField">82537660</field>
+    <field name="product_name" type="CharField">Зажим троса DUBLEX оцинк. 4мм</field>
+  </object>
+  <object model="Products.catalog" pk="145">
+    <field name="ean" type="CharField">3276005068964</field>
+    <field name="lm" type="CharField">15029084</field>
+    <field name="product_name" type="CharField">Постер на стекле Манхеттэн 40х50</field>
+  </object>
+  <object model="Products.catalog" pk="146">
+    <field name="ean" type="CharField">4600776022563</field>
+    <field name="lm" type="CharField">82166951</field>
+    <field name="product_name" type="CharField">Грильято GL15мама150x150x37мет.Оцинк.0.6</field>
+  </object>
+  <object model="Products.catalog" pk="147">
+    <field name="ean" type="CharField">4627110529953</field>
+    <field name="lm" type="CharField">82261159</field>
+    <field name="product_name" type="CharField">Светильник трековый свет-й  30W,белый</field>
+  </object>
+  <object model="Products.catalog" pk="148">
+    <field name="ean" type="CharField">2000133630707</field>
+    <field name="lm" type="CharField">13363070</field>
+    <field name="product_name" type="CharField">Свет-к ЛИНИЯ-3 Е27х60W серый, IP54</field>
+  </object>
+  <object model="Products.catalog" pk="149">
+    <field name="ean" type="CharField">4670001500654</field>
+    <field name="lm" type="CharField">82333913</field>
+    <field name="product_name" type="CharField">МД2232Р решетка вентиляционная рег</field>
+  </object>
+  <object model="Products.catalog" pk="150">
+    <field name="ean" type="CharField">4660054840104</field>
+    <field name="lm" type="CharField">82290633</field>
+    <field name="product_name" type="CharField">Плитка тротуар. 330x330x20 зеленая</field>
+  </object>
+  <object model="Products.catalog" pk="151">
+    <field name="ean" type="CharField">4640015970286</field>
+    <field name="lm" type="CharField">82152741</field>
+    <field name="product_name" type="CharField">Кер.гранит VZ01 60x60 Непол.Рект.1,44м2</field>
+  </object>
+  <object model="Products.catalog" pk="152">
+    <field name="ean" type="CharField">4891199145520</field>
+    <field name="lm" type="CharField">82203328</field>
+    <field name="product_name" type="CharField">Аккумуляторы GP 40AAAHCSV-2CR 2шт </field>
+  </object>
+  <object model="Products.catalog" pk="153">
+    <field name="ean" type="CharField">4630046342725</field>
+    <field name="lm" type="CharField">82146360</field>
+    <field name="product_name" type="CharField">ШтакетПрямоуг.фиг. 0,45 PE RAL 8017-2,5м</field>
+  </object>
+  <object model="Products.catalog" pk="154">
+    <field name="ean" type="CharField">4607805026431</field>
+    <field name="lm" type="CharField">17190496</field>
+    <field name="product_name" type="CharField">Постер стекл 4шт Пион D-ART 30x30</field>
+  </object>
+  <object model="Products.catalog" pk="155">
+    <field name="ean" type="CharField">3276000126539</field>
+    <field name="lm" type="CharField">13134200</field>
+    <field name="product_name" type="CharField">Рак.квадр.стекл.Лаура 30x30x11чер</field>
+  </object>
+  <object model="Products.catalog" pk="156">
+    <field name="ean" type="CharField">4630046114865</field>
+    <field name="lm" type="CharField">82139449</field>
+    <field name="product_name" type="CharField">Ендова ниж 300 0,45 Drap-f RAL 6005-2,0м</field>
+  </object>
+  <object model="Products.catalog" pk="157">
+    <field name="ean" type="CharField">4690335015570</field>
+    <field name="lm" type="CharField">82273927</field>
+    <field name="product_name" type="CharField">Зубило широкое 250х16х50мм 46706</field>
+  </object>
+  <object model="Products.catalog" pk="158">
+    <field name="ean" type="CharField">4690250051486</field>
+    <field name="lm" type="CharField">82537379</field>
+    <field name="product_name" type="CharField">Карабин DIN5299C ZN M 9</field>
+  </object>
+  <object model="Products.catalog" pk="159">
+    <field name="ean" type="CharField">2000154573618</field>
+    <field name="lm" type="CharField">15457361</field>
+    <field name="product_name" type="CharField">Наклейки Герберы летние Декорет L</field>
+  </object>
+  <object model="Products.catalog" pk="160">
+    <field name="ean" type="CharField">2000119886678</field>
+    <field name="lm" type="CharField">11988667</field>
+    <field name="product_name" type="CharField">Цепь оцинк. DIN 763(дл.звено) 6мм</field>
+  </object>
+  <object model="Products.catalog" pk="161">
+    <field name="ean" type="CharField">2000154716497</field>
+    <field name="lm" type="CharField">15471649</field>
+    <field name="product_name" type="CharField">Наклейка влагостойкая тюльпаны POA 8811</field>
+  </object>
+  <object model="Products.catalog" pk="162">
+    <field name="ean" type="CharField">5412253975021</field>
+    <field name="lm" type="CharField">12484268</field>
+    <field name="product_name" type="CharField">Спот встр BOLAR 1xGU10x50W  стекло</field>
+  </object>
+  <object model="Products.catalog" pk="163">
+    <field name="ean" type="CharField">4660054830686</field>
+    <field name="lm" type="CharField">82222132</field>
+    <field name="product_name" type="CharField">КРАН ШАРОВОЙ КШ.Ц.М.080.025.Н/П.02</field>
+  </object>
+  <object model="Products.catalog" pk="164">
+    <field name="ean" type="CharField">4607104872128</field>
+    <field name="lm" type="CharField">82421098</field>
+    <field name="product_name" type="CharField">Раковина Glance 40 c отв.</field>
+  </object>
+  <object model="Products.catalog" pk="165">
+    <field name="ean" type="CharField">4630039755600</field>
+    <field name="lm" type="CharField">82145769</field>
+    <field name="product_name" type="CharField">М/ч классик 0,45 PE RAL 6005 - 1,17 м</field>
+  </object>
+  <object model="Products.catalog" pk="166">
+    <field name="ean" type="CharField">2000141509231</field>
+    <field name="lm" type="CharField">14150923</field>
+    <field name="product_name" type="CharField">Крестовина однопл. 50х50х50/45гр.</field>
+  </object>
+  <object model="Products.catalog" pk="167">
+    <field name="ean" type="CharField">4610013190627</field>
+    <field name="lm" type="CharField">14154027</field>
+    <field name="product_name" type="CharField">Тройник ПП 110х50/87гр.</field>
+  </object>
+  <object model="Products.catalog" pk="168">
+    <field name="ean" type="CharField">3276004865595</field>
+    <field name="lm" type="CharField">14263717</field>
+    <field name="product_name" type="CharField">Лопата штык.прямоуг.стекл.чер.Geolia пр</field>
+  </object>
+  <object model="Products.catalog" pk="169">
+    <field name="ean" type="CharField">5035048072158</field>
+    <field name="lm" type="CharField">82282453</field>
+    <field name="product_name" type="CharField">Сверло п/дер. Форстнера, 117мм</field>
+  </object>
+  <object model="Products.catalog" pk="170">
+    <field name="ean" type="CharField">3760058419496</field>
+    <field name="lm" type="CharField">13901457</field>
+    <field name="product_name" type="CharField">Наклейки Луговые бабочки Декор S 20шт</field>
+  </object>
+  <object model="Products.catalog" pk="171">
+    <field name="ean" type="CharField">4680046875310</field>
+    <field name="lm" type="CharField">82250418</field>
+    <field name="product_name" type="CharField">Шпилька M8х2000 DIN 975</field>
+  </object>
+  <object model="Products.catalog" pk="172">
+    <field name="ean" type="CharField">4690516023134</field>
+    <field name="lm" type="CharField">14396325</field>
+    <field name="product_name" type="CharField">Мыльница "Листочек"</field>
+  </object>
+  <object model="Products.catalog" pk="173">
+    <field name="ean" type="CharField">2000158116910</field>
+    <field name="lm" type="CharField">15811691</field>
+    <field name="product_name" type="CharField">Кран шаровой Uno Н/Н 3/4 бабочка</field>
+  </object>
+  <object model="Products.catalog" pk="174">
+    <field name="ean" type="CharField">4048962016277</field>
+    <field name="lm" type="CharField">82150245</field>
+    <field name="product_name" type="CharField">Дюбель фасад.SXR 8X60T шур.потай(50шт)  </field>
+  </object>
+  <object model="Products.catalog" pk="175">
+    <field name="ean" type="CharField">4690250050489</field>
+    <field name="lm" type="CharField">82537307</field>
+    <field name="product_name" type="CharField">Блок для троса 6мм двойной оц,мет.шкив</field>
+  </object>
+  <object model="Products.catalog" pk="176">
+    <field name="ean" type="CharField">4811053144841</field>
+    <field name="lm" type="CharField">15548538</field>
+    <field name="product_name" type="CharField">Обои 0,53х10м бум  ос цветы беж FOX2581</field>
+  </object>
+  <object model="Products.catalog" pk="177">
+    <field name="ean" type="CharField">2000171905843</field>
+    <field name="lm" type="CharField">17190584</field>
+    <field name="product_name" type="CharField">Постер стекл Розовый букет D-ART 30x30</field>
+  </object>
+  <object model="Products.catalog" pk="178">
+    <field name="ean" type="CharField">4630015260500</field>
+    <field name="lm" type="CharField">15563826</field>
+    <field name="product_name" type="CharField">Бра TECH 1xCX53x7W</field>
+  </object>
+  <object model="Products.catalog" pk="179">
+    <field name="ean" type="CharField">4670016351074</field>
+    <field name="lm" type="CharField">82338861</field>
+    <field name="product_name" type="CharField">Ножницы секторные НС-120(КВТ) к-кт</field>
+  </object>
+  <object model="Products.catalog" pk="180">
+    <field name="ean" type="CharField">3276004273628</field>
+    <field name="lm" type="CharField">13510878</field>
+    <field name="product_name" type="CharField">Цветочный горшок 44x25x18см ель, воск</field>
+  </object>
+  <object model="Products.catalog" pk="181">
+    <field name="ean" type="CharField">2000130489940</field>
+    <field name="lm" type="CharField">13048994</field>
+    <field name="product_name" type="CharField">Мус.бак кругл.30 литр.с сенс.открыванием</field>
+  </object>
+  <object model="Products.catalog" pk="182">
+    <field name="ean" type="CharField">4680296029549</field>
+    <field name="lm" type="CharField">82211647</field>
+    <field name="product_name" type="CharField">Сайдин Дачный Лимонник 3,05м</field>
+  </object>
+  <object model="Products.catalog" pk="183">
+    <field name="ean" type="CharField">2000174928818</field>
+    <field name="lm" type="CharField">17492881</field>
+    <field name="product_name" type="CharField">Штора ТРАНИ зелен 200х260 лента</field>
+  </object>
+  <object model="Products.catalog" pk="184">
+    <field name="ean" type="CharField">4690653047147</field>
+    <field name="lm" type="CharField">82579339</field>
+    <field name="product_name" type="CharField">Порог с монтаж./к. 42мм 0,9м 206 ДУБ КНЧ</field>
+  </object>
+  <object model="Products.catalog" pk="185">
+    <field name="ean" type="CharField">2000140713288</field>
+    <field name="lm" type="CharField">14071328</field>
+    <field name="product_name" type="CharField">Тюль Серебряный цветок 300х260 лента</field>
+  </object>
+  <object model="Products.catalog" pk="186">
+    <field name="ean" type="CharField">4670032770057</field>
+    <field name="lm" type="CharField">82212067</field>
+    <field name="product_name" type="CharField">ПАССАТИЖИ силовые 1000 V</field>
+  </object>
+  <object model="Products.catalog" pk="187">
+    <field name="ean" type="CharField">4612744978307</field>
+    <field name="lm" type="CharField">82276331</field>
+    <field name="product_name" type="CharField">STOUT Space 350 6 секций радиатор бимет.</field>
+  </object>
+  <object model="Products.catalog" pk="188">
+    <field name="ean" type="CharField">3276005215375</field>
+    <field name="lm" type="CharField">15117965</field>
+    <field name="product_name" type="CharField">Штора блэкаут Раяма серый 140 260 лент</field>
+  </object>
+  <object model="Products.catalog" pk="189">
+    <field name="ean" type="CharField">4630032099732</field>
+    <field name="lm" type="CharField">82375215</field>
+    <field name="product_name" type="CharField">УГОЛОК ГОРЯЧЕКАТАНЫЙ 80X80X7  2,92М</field>
+  </object>
+  <object model="Products.catalog" pk="190">
+    <field name="ean" type="CharField">2000140640645</field>
+    <field name="lm" type="CharField">14064064</field>
+    <field name="product_name" type="CharField">Штора атлас цветок 140х260 шоко лента</field>
+  </object>
+  <object model="Products.catalog" pk="191">
+    <field name="ean" type="CharField">4670002960631</field>
+    <field name="lm" type="CharField">82152676</field>
+    <field name="product_name" type="CharField">Кер.гранит RW09 60x60 Полир.1,44м2</field>
+  </object>
+  <object model="Products.catalog" pk="192">
+    <field name="ean" type="CharField">2300000096699</field>
+    <field name="lm" type="CharField">82257723</field>
+    <field name="product_name" type="CharField">Костюм дорожника Альянс 88-92/170-176 </field>
+  </object>
+  <object model="Products.catalog" pk="193">
+    <field name="ean" type="CharField">2000150899330</field>
+    <field name="lm" type="CharField">15089933</field>
+    <field name="product_name" type="CharField">Тюль Дебби бирюз 300 260 лент</field>
+  </object>
+  <object model="Products.catalog" pk="194">
+    <field name="ean" type="CharField">4630046117125</field>
+    <field name="lm" type="CharField">82139672</field>
+    <field name="product_name" type="CharField">Карниз. Шир 100х85 0,5 Q-f RAL8017-3,0 м</field>
+  </object>
+  <object model="Products.catalog" pk="195">
+    <field name="ean" type="CharField">4607157446154</field>
+    <field name="lm" type="CharField">82106761</field>
+    <field name="product_name" type="CharField">Смесь д/расшивЛинкер ШОВкоричневый25</field>
+  </object>
+  <object model="Products.catalog" pk="196">
+    <field name="ean" type="CharField">3276000089766</field>
+    <field name="lm" type="CharField">13051261</field>
+    <field name="product_name" type="CharField">Дозатор Stone беж полирезин</field>
+  </object>
+  <object model="Products.catalog" pk="197">
+    <field name="ean" type="CharField">2000150287786</field>
+    <field name="lm" type="CharField">15028778</field>
+    <field name="product_name" type="CharField">Постер на стекле Маяк 50х70</field>
+  </object>
+  <object model="Products.catalog" pk="198">
+    <field name="ean" type="CharField">2000150295194</field>
+    <field name="lm" type="CharField">15029519</field>
+    <field name="product_name" type="CharField">Постер на стекле Ретромобили 30х80</field>
+  </object>
+  <object model="Products.catalog" pk="199">
+    <field name="ean" type="CharField">4630046346655</field>
+    <field name="lm" type="CharField">82220510</field>
+    <field name="product_name" type="CharField">примыкания для МК 0,45 PE foil RAL 9003</field>
+  </object>
+  <object model="Products.catalog" pk="200">
+    <field name="ean" type="CharField">4620013423328</field>
+    <field name="lm" type="CharField">13955009</field>
+    <field name="product_name" type="CharField">Терморегулятор ТР 515 электр. бел.</field>
+  </object>
+  <object model="defender.accessattempt" pk="1">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-25T13:29:45.315246+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="2">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">60001240</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-25T19:50:54.861262+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="3">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">60001240</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-25T19:51:04.996228+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="4">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">60001240</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-25T22:13:34.104930+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="5">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">60001240</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-25T22:13:44.379082+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="6">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">60088650</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-27T11:03:57.954074+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="7">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.com</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-27T12:12:05.904585+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="8">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-09-27T12:12:11.966571+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="9">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">42342</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-01T13:56:40.657310+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="10">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">234234</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-01T13:56:43.299199+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="11">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">234234</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-01T13:56:46.131529+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="12">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">45645645645</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-01T13:57:00.458296+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="13">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">45645645645</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-01T13:57:03.720529+00:00</field>
+    <field name="login_valid" type="BooleanField">False</field>
+  </object>
+  <object model="defender.accessattempt" pk="14">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-09T08:26:03.277121+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="15">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-09T09:30:14.251069+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="16">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-10T13:39:46.350302+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="17">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-10T15:55:49.286578+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+  <object model="defender.accessattempt" pk="18">
+    <field name="user_agent" type="CharField">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36</field>
+    <field name="ip_address" type="GenericIPAddressField">127.0.0.1</field>
+    <field name="username" type="CharField">admin@admin.ru</field>
+    <field name="http_accept" type="CharField">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</field>
+    <field name="path_info" type="CharField">/accounts/login/</field>
+    <field name="attempt_time" type="DateTimeField">2020-10-10T19:13:28.012646+00:00</field>
+    <field name="login_valid" type="BooleanField">True</field>
+  </object>
+</django-objects>
