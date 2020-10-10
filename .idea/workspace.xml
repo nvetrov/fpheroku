@@ -13,7 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d452af4-6e18-49f0-ae36-8eb10edc0427" name="Default Changelist" comment="D5.10 Деплой приложения на Heroku">
+    <list default="true" id="8d452af4-6e18-49f0-ae36-8eb10edc0427" name="Default Changelist" comment="TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fp/settings.py" afterDir="false" />
     </list>
@@ -588,14 +588,7 @@
       <workItem from="1602351271218" duration="1401000" />
       <workItem from="1602357670483" duration="5764000" />
       <workItem from="1602363449164" duration="87000" />
-      <workItem from="1602363541509" duration="684000" />
-    </task>
-    <task id="LOCAL-00096" summary="Фильтрация.">
-      <created>1600193865163</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1600193865163</updated>
+      <workItem from="1602363541509" duration="919000" />
     </task>
     <task id="LOCAL-00097" summary="Форма создание забыто товара">
       <created>1600602403900</created>
@@ -933,7 +926,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602363779251</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'">
+      <created>1602364237763</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1602364237763</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -970,7 +970,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="До изменение модели авторизации по LDAP." />
     <MESSAGE value="Поиск." />
     <MESSAGE value="meassage: &#10;перемещение на новый товар" />
     <MESSAGE value="meassage: &#10;перемещение на новый товар.   БЕЗ ОПТИМИЗАЦИИ" />
@@ -995,7 +994,8 @@
     <MESSAGE value="django_heroku.settings(locals())" />
     <MESSAGE value="add release: python manage.py loaddata data.xml" />
     <MESSAGE value="D5.10 Деплой приложения на Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="D5.10 Деплой приложения на Heroku" />
+    <MESSAGE value="TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="269" y="381" width="732" height="644" key="#Inspections" timestamp="1599254242750">
@@ -1292,7 +1292,7 @@
     <state x="577" y="607" width="900" height="744" key="SettingsEditor/0.387.1920.985/1920.0.2560.1440@0.387.1920.985" timestamp="1597175208135" />
     <state x="2689" y="321" width="1022" height="737" key="SettingsEditor/0.387.1920.985/1920.0.2560.1440@1920.0.2560.1440" timestamp="1598035985774" />
     <state x="577" y="601" width="900" height="765" key="SettingsEditor/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1598995811613" />
-    <state x="2795" y="422" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602363781110">
+    <state x="2795" y="422" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602364241190">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="656" y="316" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1600685173145" />
@@ -1307,7 +1307,7 @@
     <state x="693" y="676" width="800" height="535" key="Vcs.Push.Dialog.v2/0.387.4480.985@0.387.4480.985" timestamp="1600030908952" />
     <state x="297" y="316" width="528" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/3840.0.1920.1080/0.27.1920.985@0.27.1920.985" timestamp="1599484714422" />
     <state x="656" y="677" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.360.1920.1080@0.360.1920.1080" timestamp="1602336033693" />
-    <state x="2795" y="422" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1602363781110" />
+    <state x="2795" y="422" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1602364241190" />
     <state x="875" y="676" width="800" height="535" key="Vcs.Push.Dialog.v2/2560.360.1920.1080/0.387.2560.985@0.387.2560.985" timestamp="1597011115713" />
     <state width="1280" height="672" key="XDebugger.FullValuePopup" timestamp="1600862757361">
       <screen x="0" y="27" width="2560" height="1345" />
