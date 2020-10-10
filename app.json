@@ -1,6 +1,6 @@
 {
-  "name": "Personal library",
-  "description": "Personal library on Heroku",
+  "name": "ЭЛЕКТРОННЫЙ ЖУРНАЛ ЗАБЫТЫХ ВЕЩЕЙ",
+  "description": "ЭЛЕКТРОННЫЙ ЖУРНАЛ ЗАБЫТЫХ ВЕЩЕЙ on Heroku",
   "image": "heroku/python",
   "keywords": ["python", "django" ]
 }
