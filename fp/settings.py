@@ -51,9 +51,7 @@ INSTALLED_APPS = [
     # 'django_python3_ldap',
     'defender',
 
-
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -68,8 +66,6 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'defender.middleware.FailedLoginMiddleware',
-
-
 
 ]
 
@@ -157,7 +153,6 @@ USE_TZ = True
 # ]
 
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_URL = '/static/'
@@ -195,7 +190,6 @@ DEFENDER_ACCESS_ATTEMPT_EXPIRATION = 2  # hour  Пепеписывается б�
 # DEFENDER_DISABLE_IP_LOCKOUT = True
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -213,4 +207,4 @@ LOGGING = {
 }
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
