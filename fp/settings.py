@@ -30,9 +30,7 @@ SECRET_KEY = 'dwrp9n)aon5l=xdos%!jg%&&4yar5g-(icdvj^@a1cmg-rt&_d'
 # DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
-
-
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -194,21 +192,21 @@ DEFENDER_ACCESS_ATTEMPT_EXPIRATION = 2  # hour  Пепеписывается б�
 # DEFENDER_DISABLE_IP_LOCKOUT = True
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#         },
-#     },
-#     'loggers': {
-#         'django.db.backends': {
-#             'level': 'DEBUG',
-#             'handlers': ['console'],
-#         }
-#     },
-# }
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'level': 'DEBUG',
+            'handlers': ['console'],
+        }
+    },
+}
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
