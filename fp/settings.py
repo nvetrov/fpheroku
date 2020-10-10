@@ -207,6 +207,8 @@ except ImportError:
         import django_heroku
         django_heroku.settings(locals())
         SECRET_KEY = os.environ.get('SECRET_KEY')
+        ALLOWED_HOSTS = ["app - fp.herokuapp.com", ]
+
 
 
 
