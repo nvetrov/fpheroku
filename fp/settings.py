@@ -29,7 +29,7 @@ SECRET_KEY = 'dwrp9n)aon5l=xdos%!jg%&&4yar5g-(icdvj^@a1cmg-rt&_d'
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['app-fp.herokuapp.com']
 
 # Application definition
 
@@ -207,7 +207,7 @@ except ImportError:
         import django_heroku
         django_heroku.settings(locals())
         SECRET_KEY = os.environ.get('SECRET_KEY')
-        ALLOWED_HOSTS = ["app - fp.herokuapp.com", ]
+        ALLOWED_HOSTS = ["app-fp.herokuapp.com", ]
 
 
 
