@@ -94,16 +94,16 @@ WSGI_APPLICATION = 'fp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-import dj_database_url
-DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+# import dj_database_url
+# DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 
 # for test без авторизации по ldap
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 # for prod:
 # DATABASES = {
@@ -150,11 +150,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-INTERNAL_IPS = [
-    # ...
-    '127.0.0.1',
-    # ...
-]
+# INTERNAL_IPS = [
+#     # ...
+#     '127.0.0.1',
+#     # ...
+# ]
 
 
 
@@ -211,3 +211,6 @@ LOGGING = {
         }
     },
 }
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
