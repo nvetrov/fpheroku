@@ -224,6 +224,16 @@ LOGGING = {
     },
 }
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-# TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+
+DEBUG = False
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+    # Activate Django-Heroku.
+    if not DEBUG:
+        import django_heroku
+        django_heroku.settings(locals())
+
+
