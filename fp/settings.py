@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import django_heroku
+
 from django.contrib.auth import get_user_model
 from django.urls import reverse_lazy
 from getsecret import getsecret
@@ -24,7 +24,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'dwrp9n)aon5l=xdos%!jg%&&4yar5g-(icdvj^@a1cmg-rt&_d'
-# SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,17 +83,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'fp.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-# import dj_database_url
-# DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
-# for test без авторизации по ldap
-
-# import dj_database_url
-# DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 
 DATABASES = {
     'default': {
@@ -192,22 +180,6 @@ DEFENDER_ACCESS_ATTEMPT_EXPIRATION = 2  # hour  Пепеписывается б�
 # DEFENDER_DISABLE_IP_LOCKOUT = True
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#         },
-#     },
-#     'loggers': {
-#         'django.db.backends': {
-#             'level': 'DEBUG',
-#             'handlers': ['console'],
-#         }
-#     },
-# }
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -217,7 +189,7 @@ LOGGING = {
         },
     },
     'loggers': {
-        'django': {
+        'django.db.backends': {
             'level': 'DEBUG',
             'handlers': ['console'],
         }
@@ -225,7 +197,6 @@ LOGGING = {
 }
 
 
-DEBUG = False
 
 try:
     from .local_settings import *
@@ -235,5 +206,16 @@ except ImportError:
     if not DEBUG:
         import django_heroku
         django_heroku.settings(locals())
+        SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
+
+# import socket
+#
+# if socket.gethostname() == "server_name":
+#        DEBUG = False
+#        ALLOWED_HOSTS = [".your_domain_name.com",]
+#        ...
+# else:
+#        DEBUG = True
+#        ALLOWED_HOSTS = ["localhost", "127.0.0.1",]
